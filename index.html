@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up From Project</title>
+    <script src="validation.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="left-wrapper">
+        <div class="img-wrapper">
+          <div class="logo-wrapper">
+            <img class="icon" src="./images/rose.svg" alt="rose icon">
+            <h1>Blooming Booksellers</h1>
+          </div>
+        </div>
+      </div>
+      <div class="right-wrapper">
+        <div class="expo">
+          <p>This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams.</p>
+          <p>Sign up <em>now</em> to get started.</p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <form id="sign-up">
+          <h2>Let's do this!</h2>
+          <div class="pair">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" class="first-name">
+          </div>
+          <div class="pair">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" class="last-name">
+          </div>
+          <div class="pair">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" class="email">
+          </div>
+          <div class="pair">
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" name="phone" class="phone">
+          </div>
+          <div class="pair">
+            <label for="password">PASSWORD *</label>
+            <input type="password" name="password" class="password" maxlength="18" minlength="8" required>
+          </div>
+          <div class="pair">
+            <label for="confirm-password">CONFIRM PASSWORD *</label>
+            <input type="password" name="confirm-password" class="confirm-password" maxlength="18" minlength="8"
+              required>
+            <p class="msg"></p>
+          </div>
+        </form>
+        <div class="btm-sect">
+          <button form="sign-up" type="submit">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

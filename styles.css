@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Sacramento&display=swap");
+
+:root {
+	--img-bg: #f6e7ce;
+	--pale-img-bg: #fcf6ea;
+	--med-img-bg: #eaddc4;
+	--dark-img-bg: #b7a98e;
+	--trans-img-bg: #f6e7cea2;
+	--trans: rgba(255, 255, 255, 0);
+
+	--dark-green: rgb(52, 54, 51);
+	--dark-pink: #7c2f36;
+	--dark-purple: rgb(56, 54, 73);
+	--maroon: #4a3132;
+}
+
+html,
+body {
+	min-height: 100vh;
+	margin: 0 auto;
+
+	font-size: 18px;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+}
+/* reset form styles: */
+/* makes some form styles consistent across browsers */
+button,
+input {
+	font-family: inherit;
+	font-size: 100%;
+	width: 200px;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--img-bg);
+}
+p {
+	max-width: 50ch;
+}
+img.icon {
+	width: 12%;
+	height: auto;
+}
+
+.main {
+	display: flex;
+	position: relative;
+}
+.left-wrapper {
+	width: 40%;
+}
+.img-wrapper {
+	background-image: url("./images/bouquet.jpg");
+	background-position: center;
+
+	position: relative;
+	height: 100vh;
+	background-repeat: no-repeat;
+}
+.logo-wrapper {
+	text-align: center;
+	position: relative;
+
+	top: 24%;
+
+	padding: 2rem;
+	background: linear-gradient(
+		var(--trans) 0%,
+		var(--trans-img-bg) 10%,
+		var(--trans-img-bg) 80%,
+
+		var(--trans) 100%
+	);
+	color: var(--dark-purple);
+	font-family: "Sacramento", cursive;
+}
+h1 {
+	font-size: 4rem;
+	line-height: 1.5ch;
+	margin: 0;
+}
+
+.right-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 60%;
+	padding-top: 25%;
+
+	background-color: var(--med-img-bg);
+}
+.expo {
+	padding-left: 2rem;
+	padding-bottom: 2rem;
+}
+form {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--pale-img-bg);
+
+	padding: 2rem 2rem;
+}
+h2 {
+	width: 100%;
+	margin: 0;
+	padding: 0 0 1rem 0;
+	font-size: 1.2rem;
+}
+.pair {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	color: var(--dark-green);
+	padding-bottom: 1.5rem;
+}
+label {
+	font-size: 0.8rem;
+	padding-bottom: 0.1rem;
+}
+input {
+	padding: 0.2rem 0.4rem;
+	font-weight: 300;
+	border-radius: 0.2rem;
+	border: 1px solid var(--img-bg);
+}
+input:invalid:required {
+	border: 1px solid var(--dark-pink);
+}
+input:valid:required {
+	border: 1px solid var(--dark-green);
+}
+p.msg {
+	margin: 0;
+	padding-top: 0.2rem;
+	color: var(--dark-pink);
+	font-size: 0.8rem;
+}
+
+.btm-sect {
+	padding-left: 2rem;
+	padding-top: 2rem;
+}
+
+button {
+	background-color: var(--maroon);
+	padding: 0.6rem 1rem;
+	border-radius: 0.4rem;
+	color: var(--pale-img-bg);
+	box-shadow: none;
+	border: 1px solid var(--pale-img-bg);
+}
+button:hover {
+	background-color: var(--pale-img-bg);
+	color: var(--dark-green);
+	cursor: pointer;
+}
+a:any-link {
+	color: var(--dark-purple);
+}
+a:hover {
+	color: var(--dark-pink);
+}
